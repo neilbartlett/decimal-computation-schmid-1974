@@ -5,7 +5,7 @@ APL and other artifacts from the book `Decimal Computation. Schmid, H. (Wiley, N
 
 The apl directory contains APL code from the appendices from the book.
 
-The code has been test under Dyalog (version on 18.2 on MacOs). The code is traditional APL not the modern dfn style. To get it to run under Dyalog, one line of code was modified to use the format ⍕ (thorn) which is the modern equivalent of the DFT formatting function used in the book's code. Note DFT was an APL/360 format command -- see https://dl.acm.org/doi/pdf/10.1145/585882.585894 for details.
+The code has been tested under Dyalog (version on 18.2 on MacOs). The code is traditional APL not the modern dfn style. To get it to run under Dyalog, one line of code was modified to use the format ⍕ (thorn) which is the modern equivalent of the DFT formatting function used in the book's code. Note DFT was an APL/360 format command -- see https://dl.acm.org/doi/pdf/10.1145/585882.585894 for details.
 
 # Use
 
