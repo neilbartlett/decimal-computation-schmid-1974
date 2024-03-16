@@ -1,21 +1,21 @@
 # decimal-computation-schmid-1974
-APL and other artifacts from Schmid, H. Decimal Computation. (Wiley, New York, 1974) ISBN 978-0-471-76180-8
+APL and other artifacts from the book `Decimal Computation. Schmid, H. (Wiley, New York, 1974) ISBN 978-0-471-76180-8`
 
 # APL
 
 The apl directory contains APL code from the appendices from the book.
 
-The code runs under Dyalog (tested on 18.2 on MacOs). The code uses the code style from the booka which does not use the dfn standard but rather the older APL style. To get it to run under Dyalog, the code was modified slightly  to use the thorn/format ⍕ which is modern equivalent of DFT. Note DFT was an APL/360 format command -- see https://dl.acm.org/doi/pdf/10.1145/585882.585894 for details.
+The code has been test under Dyalog (version on 18.2 on MacOs). The code is traditional APL not the modern dfn style. To get it to run under Dyalog, one line of code was modified to use the format ⍕ (thorn) which is the modern equivalent of the DFT formatting function used in the book's code. Note DFT was an APL/360 format command -- see https://dl.acm.org/doi/pdf/10.1145/585882.585894 for details.
 
 # Use
 
-Clone the repo and Dyalog RIDE dev environment.
+Clone the repo and run the Dyalog RIDE UI.
 
-Create a linked namespace to read the code in (this assume a Mac change the slashes correspondingly for windows)
+Create a linked namespace to read the code into the workspace (this assumes a Mac/unix -- change the slashes for Windows) Replace the stuff in curly braces to your local directory.
 ```
       ]LINK.Create decimalcomputation {full-directory-spec-to-local-repo}/decimal-computation-schmid-1974/apl
 ```
-This should reply with
+RIDE should reply with
 ```
 Linked: #.decimalcomputation → {full-directory-spec-to-local-repo}/decimal-computation-schmid-1974/apl
 ```
@@ -25,7 +25,7 @@ To check status use
       ]LINK.status
  ```
       
-Once loaded you can test the APL. The following should Table 7.3 on page 168 of the book.
+Once loaded, you can test the APL. The following function call should generate Table 7.3 on page 168 of the book.
 
 ```
       #.decimalcomputation.COSANDSIN 30
