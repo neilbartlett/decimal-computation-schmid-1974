@@ -3,14 +3,13 @@ APL and other artifacts from Schmid, H. Decimal Computation. (Wiley, New York, 1
 
 # APL
 
-The apl directory contains apl code for the appendices from the book.
+The apl directory contains APL code from the appendices from the book.
 
-The code will run under Dyalog (test on 18.2 on MacOs). The code was modified slightly from the book to to use the thorn/format ⍕ which is the Dyalog equivalent of DFT. Note DFT was an APL/360 format command -- see https://dl.acm.org/doi/pdf/10.1145/585882.585894 for details.
+The code runs under Dyalog (tested on 18.2 on MacOs). The code uses the code style from the booka which does not use the dfn standard but rather the older APL style. To get it to run under Dyalog, the code was modified slightly  to use the thorn/format ⍕ which is modern equivalent of DFT. Note DFT was an APL/360 format command -- see https://dl.acm.org/doi/pdf/10.1145/585882.585894 for details.
 
 # Use
 
 Clone the repo and Dyalog RIDE dev environment.
-
 
 Create a linked namespace to read the code in (this assume a Mac change the slashes correspondingly for windows)
 ```
