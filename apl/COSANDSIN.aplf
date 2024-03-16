@@ -1,0 +1,24 @@
+∇ COSANDSIN L;I;J;X;Y;Z;OUT
+  OUT←0, 0, 0, X, Y, SA , PK←Z←X←J←1+I←N←SA←Y←0
+ LH:A←(180÷○1)×¯3○10*-I
+  →(L≤SA)/NEG
+  Z←Z-Y×10*-I
+  Y←Y+X×10*-I
+  SA←SA+A
+  →KH
+ NEG:Z←Z+Y×10*-I
+  Y←Y-X×10*-I
+  SA←SA-A
+ KH:PK←PK×1÷2○¯3○10*-I
+  OUT←OUT,(N←N+1),I,J,(X←Z),Y,SA,PK
+  →(I=0)/RL
+  →(9≥J←J+1)/LH
+  J←1 
+ RL:→(5>I←I+1)/LH
+  '   N.   I.   J.         X.         Y       SUM MU    PRODUCT K. '
+  5 0 5 0 5 0 12 6 12 6 12 6 12 6 ⍕ 31 7 ⍴OUT
+  'COSL=X÷PK=    ',X÷PK
+  'ERROR=COSL-X÷PK=',(X÷PK)-2○L×○1÷180
+  'SINL=Y÷PK.    ',Y÷PK
+  'ERROR=SINL-Y÷PK=',(Y÷PK)-1○L×○1÷180
+∇ 
